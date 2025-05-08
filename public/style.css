@@ -1,9 +1,172 @@
-h1{
-    color:maroon;
+/* Base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #a8c0ff, #3f4c6b); /* Gradient: Light Blue to Soft Dark Blue */
+    margin: 0;
+    padding: 20px;
+    color: #333;
 }
-.post{
-    background-color: blanchedalmond;
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 3.5rem; /* Larger size for better impact */
+    letter-spacing: 1.5px; /* Elegant spacing */
+    font-weight: 700; /* Bold for emphasis */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+    padding-top: 20px;
+    margin-top: 10px;
 }
-.user{
+
+/* Tagline styling */
+.tagline {
+    text-align: center;
     font-style: italic;
+    font-size: 1.2rem;
+    color: #f0f0f0; /* Slightly off-white for a soft look */
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+/* Post styling */
+.post {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient: Light Blue to Purple */
+    color: white;
+    border: 1px solid #ddd;
+    padding: 20px 30px;
+    margin: 20px auto;
+    border-radius: 15px;
+    max-width: 650px; /* Increased width for better readability */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Softer shadow with a higher blur */
+}
+
+.user {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #f1f1f1; /* Slightly lighter color */
+}
+
+.content {
+    font-size: 1.3rem; /* Slightly larger content text */
+    margin: 10px 0;
+}
+
+/* Links and buttons */
+a {
+    color: #f8f9fa;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ffeb3b; /* Soft Yellow for hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+button {
+    background-color: #4ba17a; /* Positive Mint Green for create post */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px; /* Softer corners */
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #2f9e69; /* Darker mint green */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Delete Button */
+.delete-button {
+    background-color: #9e2a2f; /* Reddish-Brown for Delete button */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #7f1f24; /* Darker reddish-brown for hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Forms */
+form {
+    margin-top: 15px;
+}
+
+textarea, input[type="text"], input[type="email"], input[type="password"], input[type="submit"] {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 12px;
+    margin: 12px 0;
+    width: 100%;
+    max-width: 650px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Footer */
+footer {
+    background-color: #2f4f4f; /* Slate Gray for footer */
+    color: #f8f9fa;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #ffc107; /* Golden Yellow color for footer links */
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ffeb3b; /* Soft Yellow on hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .post {
+        padding: 15px;
+    }
+
+    textarea, input {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Slightly smaller h1 for mobile screens */
+    }
+
+    button {
+        font-size: 1rem; /* Slightly smaller buttons on mobile */
+        padding: 10px 15px;
+    }
 }

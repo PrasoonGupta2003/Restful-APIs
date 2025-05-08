@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create new post</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form method="post" action="/posts">
-        <input placeholder="Enter username",name="username"/>
+        <input placeholder="Enter username" name="username"/>
         <hr>
         <textarea name="content" placeholder="Write your post"></textarea>
         <hr>
         <button>Submit</button>
         <hr>
     </form>
+    <footer>
+        <p>&copy; 2025 ChatterBox by Prasoon Gupta. All rights reserved.</p>
+        <p>
+            <a href="/posts">Home</a> | 
+            <a href="/posts/new">Create Post</a>
+        </p>
+    </footer>
 </body>
 </html>
